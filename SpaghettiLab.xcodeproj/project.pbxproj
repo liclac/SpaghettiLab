@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220E4B2118166ED9008E9596 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220E4B2018166ED9008E9596 /* QuartzCore.framework */; };
+		22268B0B17F9DD1300ED2512 /* SLViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 22268B0A17F9DD1300ED2512 /* SLViewController.mm */; };
+		22268B1117F9E6B100ED2512 /* SLAddViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 22268B1017F9E6B100ED2512 /* SLAddViewController.mm */; };
+		22268B1417F9E6F100ED2512 /* SLThing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 22268B1317F9E6F100ED2512 /* SLThing.mm */; };
+		22268B1817F9FAC900ED2512 /* SLMaterial.mm in Sources */ = {isa = PBXBuildFile; fileRef = 22268B1717F9FAC900ED2512 /* SLMaterial.mm */; };
+		22268B1C17FA03BA00ED2512 /* SLThingLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 22268B1B17FA03BA00ED2512 /* SLThingLayer.mm */; };
+		22268B2117FAC50D00ED2512 /* SLWorld.mm in Sources */ = {isa = PBXBuildFile; fileRef = 22268B2017FAC50D00ED2512 /* SLWorld.mm */; };
 		2270402917ECA5740087F010 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2270402817ECA5740087F010 /* Foundation.framework */; };
 		2270402B17ECA5740087F010 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2270402A17ECA5740087F010 /* CoreGraphics.framework */; };
 		2270402D17ECA5740087F010 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2270402C17ECA5740087F010 /* UIKit.framework */; };
 		2270403317ECA5740087F010 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2270403117ECA5740087F010 /* InfoPlist.strings */; };
-		2270403517ECA5740087F010 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2270403417ECA5740087F010 /* main.m */; };
-		2270403917ECA5740087F010 /* SLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2270403817ECA5740087F010 /* SLAppDelegate.m */; };
+		2270403517ECA5740087F010 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2270403417ECA5740087F010 /* main.mm */; };
+		2270403917ECA5740087F010 /* SLAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2270403817ECA5740087F010 /* SLAppDelegate.mm */; };
 		2270403C17ECA5740087F010 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2270403A17ECA5740087F010 /* Main.storyboard */; };
-		2270403F17ECA5740087F010 /* SLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2270403E17ECA5740087F010 /* SLViewController.m */; };
 		2270404117ECA5740087F010 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2270404017ECA5740087F010 /* Images.xcassets */; };
 		2270404817ECA5740087F010 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2270404717ECA5740087F010 /* XCTest.framework */; };
 		2270404917ECA5740087F010 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2270402817ECA5740087F010 /* Foundation.framework */; };
@@ -34,25 +40,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		220E4B2018166ED9008E9596 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		22268B0917F9DD1300ED2512 /* SLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLViewController.h; sourceTree = "<group>"; };
+		22268B0A17F9DD1300ED2512 /* SLViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SLViewController.mm; sourceTree = "<group>"; };
+		22268B0F17F9E6B100ED2512 /* SLAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLAddViewController.h; sourceTree = "<group>"; };
+		22268B1017F9E6B100ED2512 /* SLAddViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SLAddViewController.mm; sourceTree = "<group>"; };
+		22268B1217F9E6F100ED2512 /* SLThing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLThing.h; sourceTree = "<group>"; };
+		22268B1317F9E6F100ED2512 /* SLThing.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SLThing.mm; sourceTree = "<group>"; };
+		22268B1617F9FAC900ED2512 /* SLMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLMaterial.h; sourceTree = "<group>"; };
+		22268B1717F9FAC900ED2512 /* SLMaterial.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SLMaterial.mm; sourceTree = "<group>"; };
+		22268B1A17FA03BA00ED2512 /* SLThingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLThingLayer.h; sourceTree = "<group>"; };
+		22268B1B17FA03BA00ED2512 /* SLThingLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SLThingLayer.mm; sourceTree = "<group>"; };
+		22268B1F17FAC50D00ED2512 /* SLWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLWorld.h; sourceTree = "<group>"; };
+		22268B2017FAC50D00ED2512 /* SLWorld.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SLWorld.mm; sourceTree = "<group>"; };
 		2270402517ECA5740087F010 /* SpaghettiLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaghettiLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2270402817ECA5740087F010 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2270402A17ECA5740087F010 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2270402C17ECA5740087F010 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2270403017ECA5740087F010 /* SpaghettiLab-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpaghettiLab-Info.plist"; sourceTree = "<group>"; };
 		2270403217ECA5740087F010 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2270403417ECA5740087F010 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2270403417ECA5740087F010 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		2270403617ECA5740087F010 /* SpaghettiLab-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpaghettiLab-Prefix.pch"; sourceTree = "<group>"; };
 		2270403717ECA5740087F010 /* SLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLAppDelegate.h; sourceTree = "<group>"; };
-		2270403817ECA5740087F010 /* SLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLAppDelegate.m; sourceTree = "<group>"; };
+		2270403817ECA5740087F010 /* SLAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SLAppDelegate.mm; sourceTree = "<group>"; };
 		2270403B17ECA5740087F010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2270403D17ECA5740087F010 /* SLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLViewController.h; sourceTree = "<group>"; };
-		2270403E17ECA5740087F010 /* SLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLViewController.m; sourceTree = "<group>"; };
 		2270404017ECA5740087F010 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2270404617ECA5740087F010 /* SpaghettiLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaghettiLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2270404717ECA5740087F010 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2270404F17ECA5740087F010 /* SpaghettiLabTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpaghettiLabTests-Info.plist"; sourceTree = "<group>"; };
 		2270405117ECA5740087F010 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2270405317ECA5740087F010 /* SpaghettiLabTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaghettiLabTests.m; sourceTree = "<group>"; };
+		22DA289E17FECE020085C93D /* SLTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTypes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				220E4B2118166ED9008E9596 /* QuartzCore.framework in Frameworks */,
 				2270402B17ECA5740087F010 /* CoreGraphics.framework in Frameworks */,
 				2270402D17ECA5740087F010 /* UIKit.framework in Frameworks */,
 				2270402917ECA5740087F010 /* Foundation.framework in Frameworks */,
@@ -79,6 +98,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22268B0717F9DD0700ED2512 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				22268B0917F9DD1300ED2512 /* SLViewController.h */,
+				22268B0A17F9DD1300ED2512 /* SLViewController.mm */,
+				22268B0F17F9E6B100ED2512 /* SLAddViewController.h */,
+				22268B1017F9E6B100ED2512 /* SLAddViewController.mm */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22268B0817F9DD0700ED2512 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22268B1F17FAC50D00ED2512 /* SLWorld.h */,
+				22268B2017FAC50D00ED2512 /* SLWorld.mm */,
+				22268B1217F9E6F100ED2512 /* SLThing.h */,
+				22268B1317F9E6F100ED2512 /* SLThing.mm */,
+				22268B1617F9FAC900ED2512 /* SLMaterial.h */,
+				22268B1717F9FAC900ED2512 /* SLMaterial.mm */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22268B1917FA039E00ED2512 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22268B1A17FA03BA00ED2512 /* SLThingLayer.h */,
+				22268B1B17FA03BA00ED2512 /* SLThingLayer.mm */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2270401C17ECA5740087F010 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +153,7 @@
 		2270402717ECA5740087F010 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				220E4B2018166ED9008E9596 /* QuartzCore.framework */,
 				2270402817ECA5740087F010 /* Foundation.framework */,
 				2270402A17ECA5740087F010 /* CoreGraphics.framework */,
 				2270402C17ECA5740087F010 /* UIKit.framework */,
@@ -112,11 +165,13 @@
 		2270402E17ECA5740087F010 /* SpaghettiLab */ = {
 			isa = PBXGroup;
 			children = (
+				22268B1917FA039E00ED2512 /* View */,
+				22268B0717F9DD0700ED2512 /* Controller */,
+				22268B0817F9DD0700ED2512 /* Model */,
+				22DA289E17FECE020085C93D /* SLTypes.h */,
 				2270403717ECA5740087F010 /* SLAppDelegate.h */,
-				2270403817ECA5740087F010 /* SLAppDelegate.m */,
+				2270403817ECA5740087F010 /* SLAppDelegate.mm */,
 				2270403A17ECA5740087F010 /* Main.storyboard */,
-				2270403D17ECA5740087F010 /* SLViewController.h */,
-				2270403E17ECA5740087F010 /* SLViewController.m */,
 				2270404017ECA5740087F010 /* Images.xcassets */,
 				2270402F17ECA5740087F010 /* Supporting Files */,
 			);
@@ -128,7 +183,7 @@
 			children = (
 				2270403017ECA5740087F010 /* SpaghettiLab-Info.plist */,
 				2270403117ECA5740087F010 /* InfoPlist.strings */,
-				2270403417ECA5740087F010 /* main.m */,
+				2270403417ECA5740087F010 /* main.mm */,
 				2270403617ECA5740087F010 /* SpaghettiLab-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -200,6 +255,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = MacaroniCode;
 				TargetAttributes = {
+					2270402417ECA5740087F010 = {
+						DevelopmentTeam = WCNKWG786Q;
+					};
 					2270404517ECA5740087F010 = {
 						TestTargetID = 2270402417ECA5740087F010;
 					};
@@ -250,9 +308,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2270403517ECA5740087F010 /* main.m in Sources */,
-				2270403F17ECA5740087F010 /* SLViewController.m in Sources */,
-				2270403917ECA5740087F010 /* SLAppDelegate.m in Sources */,
+				2270403517ECA5740087F010 /* main.mm in Sources */,
+				22268B0B17F9DD1300ED2512 /* SLViewController.mm in Sources */,
+				2270403917ECA5740087F010 /* SLAppDelegate.mm in Sources */,
+				22268B1117F9E6B100ED2512 /* SLAddViewController.mm in Sources */,
+				22268B1C17FA03BA00ED2512 /* SLThingLayer.mm in Sources */,
+				22268B1417F9E6F100ED2512 /* SLThing.mm in Sources */,
+				22268B2117FAC50D00ED2512 /* SLWorld.mm in Sources */,
+				22268B1817F9FAC900ED2512 /* SLMaterial.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,10 +444,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpaghettiLab/SpaghettiLab-Prefix.pch";
 				INFOPLIST_FILE = "SpaghettiLab/SpaghettiLab-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -394,10 +460,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpaghettiLab/SpaghettiLab-Prefix.pch";
 				INFOPLIST_FILE = "SpaghettiLab/SpaghettiLab-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -463,6 +532,7 @@
 				2270405917ECA5740087F010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2270405A17ECA5740087F010 /* Build configuration list for PBXNativeTarget "SpaghettiLabTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +541,7 @@
 				2270405C17ECA5740087F010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
