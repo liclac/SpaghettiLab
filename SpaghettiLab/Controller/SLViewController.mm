@@ -27,10 +27,15 @@
 	
 	_iron = [[SLMaterial alloc] initWithDensity:7.87];
 	
-	SLThing *thing = [[SLThing alloc] initWithMaterial:_iron inWorld:_world];
-	thing.size = SLVector(100, 100);
-	thing.pos = SLVector(50, 50);
-	[_world addThing:thing];
+	SLThing *thing1 = [[SLThing alloc] initWithMaterial:_iron inWorld:_world];
+	thing1.size = SLVector(100, 100);
+	thing1.pos = SLVector(50, 50);
+	[_world addThing:thing1];
+	
+	SLThing *thing2 = [[SLThing alloc] initWithMaterial:_iron inWorld:_world];
+	thing2.size = SLVector(150, 150);
+	thing2.pos = SLVector(50, 300);
+	[_world addThing:thing2];
 }
 
 - (void)didReceiveMemoryWarning
