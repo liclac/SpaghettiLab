@@ -52,6 +52,8 @@
 - (void)attemptMotion:(SLVector &)motion forThing:(SLThing *)thing
 {
 	thing.pos += motion;
+	
+	// Check world boundaries
 	SLVector min = SLVector(0, 0);
 	SLVector max = [_delegate worldBoundary:self] - thing.size;	// Account for the thing's size!
 	
@@ -75,6 +77,15 @@
 	{
 		thing.pos = SLVector(min.x, thing.pos.y);
 		thing.v = SLVector(0, thing.v.y);
+	}
+	
+	// Check for collissions
+	for (SLThing *otherThing in _things)
+	{
+		if(thing == otherThing || ![thing collidesWith:otherThing])
+			continue;
+		
+		NSLog(@"THE THINGS ARE COLLIDING");
 	}
 }
 

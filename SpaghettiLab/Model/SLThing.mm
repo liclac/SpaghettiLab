@@ -45,4 +45,12 @@
 	return _tmpVector;
 }
 
+- (BOOL)collidesWith:(SLThing *)other
+{
+	if((self.pos.x + self.size.x) < other.pos.x || self.pos.x > (other.pos.x + other.size.x)) return false;
+	if((self.pos.y + self.size.y) < other.pos.y || self.pos.y > (other.pos.y + other.size.y)) return false;
+	
+	return true;
+}
+
 @end

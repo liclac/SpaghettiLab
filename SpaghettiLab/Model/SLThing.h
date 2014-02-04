@@ -38,4 +38,6 @@
 - (void)applyForce:(const SLVector&)f time:(NSTimeInterval)t;
 - (SLVector)tickEnd:(NSTimeInterval)t;
 
+- (BOOL)collidesWith:(SLThing *)other;
+
 @end
