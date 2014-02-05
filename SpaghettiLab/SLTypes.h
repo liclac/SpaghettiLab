@@ -29,13 +29,31 @@ public:
 		y += rhs.y;
 		return *this;
 	}
-	SLVector& operator-=(const SLVector rhs)
+	SLVector& operator-=(const SLVector& rhs)
 	{
 		x -= rhs.x;
 		y -= rhs.y;
 		return *this;
 	}
+	SLVector& operator*=(const SLVector& rhs)
+	{
+		x *= rhs.x;
+		y *= rhs.y;
+		return *this;
+	}
 	
+	SLVector& operator+=(const float& rhs)
+	{
+		x += rhs;
+		y += rhs;
+		return *this;
+	}
+	SLVector& operator-=(const float& rhs)
+	{
+		x -= rhs;
+		y -= rhs;
+		return *this;
+	}
 	SLVector& operator*=(const float rhs)
 	{
 		x *= rhs;
@@ -54,10 +72,33 @@ inline SLVector operator-(SLVector lhs, const SLVector& rhs)
 	lhs -= rhs;
 	return lhs;
 }
+inline SLVector operator*(SLVector lhs, const SLVector& rhs)
+{
+	lhs *= rhs;
+	return lhs;
+}
+
+inline SLVector operator+(SLVector lhs, const float& rhs)
+{
+	lhs += rhs;
+	return lhs;
+}
+inline SLVector operator-(SLVector lhs, const float& rhs)
+{
+	lhs -= rhs;
+	return lhs;
+}
 inline SLVector operator*(SLVector lhs, const float& rhs)
 {
 	lhs *= rhs;
 	return lhs;
+}
+
+
+
+inline float dot(SLVector a, SLVector b)
+{
+	return (a.x * b.x) + (a.y + b.y);
 }
 
 #endif
