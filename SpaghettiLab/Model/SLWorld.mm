@@ -80,12 +80,24 @@
 	}
 	
 	// Check for collissions
-	for (SLThing *otherThing in _things)
+	SLVector normal((motion.x > 0 ? 1 : (motion.x < 0 ? -1 : 0)),
+					(motion.y > 0 ? 1 : (motion.y < 0 ? -1 : 0)));
+	for(SLThing *otherThing in _things)
 	{
+		// Skip the object iself and anything that doesn't collide with it
 		if(thing == otherThing || ![thing collidesWith:otherThing])
 			continue;
 		
-		NSLog(@"THE THINGS ARE COLLIDING");
+		// Skip objects
+		float nv = dot(otherThing.v - thing.v, normal);
+		if(nv > 0)
+			continue;
+		
+		float e = MIN(thing.restitution, otherThing.restitution);
+		float j = (-(1 + e) * nv) / (1/thing.mass + 1/otherThing.mass);
+		
+		SLVector impulse = j*normal;
+		thing.v -= 1/thing.mass * impulse;
 	}
 }
 
