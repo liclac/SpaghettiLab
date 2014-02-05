@@ -24,6 +24,7 @@
 // Properties
 @property (nonatomic, assign) SLVector size;
 @property (nonatomic, assign) SLMaterial *material;
+@property (nonatomic, assign) float restitution;
 
 // Calculated Properties
 @property (nonatomic, readonly) float mass;

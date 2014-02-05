@@ -30,11 +30,13 @@
 	SLThing *thing1 = [[SLThing alloc] initWithMaterial:_iron inWorld:_world];
 	thing1.size = SLVector(100, 100);
 	thing1.pos = SLVector(50, 50);
+	thing1.restitution = 0.9;
 	[_world addThing:thing1];
 	
 	SLThing *thing2 = [[SLThing alloc] initWithMaterial:_iron inWorld:_world];
 	thing2.size = SLVector(150, 150);
 	thing2.pos = SLVector(50, 300);
+	thing2.restitution = 0.75;
 	[_world addThing:thing2];
 }
 
